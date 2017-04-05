@@ -1,0 +1,13 @@
+{
+  "name": "discoverNewspapers",
+  "version": "1.0.0",
+  "description": "For downloading newspapers",
+  "main": "discoverNewspapers.js",
+  "dependencies": {
+    "jsdom": "^9.12.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
