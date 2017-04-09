@@ -44,6 +44,8 @@ for i, dir_entry in enumerate(os.scandir(XML_FILES_DIR)):
         continue
 
     df['date'] = date
+    df['day_of_week'] = date.weekday() 
+    df['weekend'] = date.weekday() in [5, 6]
     df['slug'] = slug
 
     df.to_sql(OUTPUT_TABLE, SQLALCHEMY_URI, if_exists='append', index=False)
