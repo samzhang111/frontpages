@@ -2,6 +2,8 @@
 
 This project downloads the current day's newspaper's front pages from [the Newseum website](newseum.org/todaysfrontpages/), then parses out text, bounding boxes, font sizes, and font faces.
 
+For desired contributions, see `WISHLIST.md` :).
+
 ## Installation:
 Requirements: Python 3, node, bash, qpdf, jq, OSX GNU coreutils
 
