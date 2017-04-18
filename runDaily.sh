@@ -1,11 +1,15 @@
 #!/bin/bash
 set -e
 
-CURRENT_DATE=`date "+%Y_%m_%d"`
+BASE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+source "${BASE_DIR}"/download.sh
+
+
+CURRENT_DATE=$(date "+%Y_%m_%d")
 
 source venv/bin/activate
 
-./download.sh
+download_newspapers "${CURRENT_DATE}"
 ./decrypt.sh
 ./parse.sh || true
 

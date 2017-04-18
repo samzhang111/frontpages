@@ -6,3 +6,7 @@ __pycache__/
 .ipynb_checkpoints
 
 *.pyc
+*.psql
+*.json
+src/
+frontpage.json
