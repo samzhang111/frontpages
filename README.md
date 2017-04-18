@@ -1,12 +1,12 @@
-# Front page newspaper parsing
+# Newspaper front pages
 
-![Mentions of "Syria" by day](analysis/static/syria_mentions.png)
+This project is about analyzing the front pages of newspapers en masse. For example, here is this plot of mentions of "Syria" across all the newspapers in our database over the last few weeks: 
 
-This project analyzes the front pages of newspapers from the [the Newseum website](newseum.org/todaysfrontpages/).
+![Mentions of "Syria" by day across many newspapers](analysis/static/syria_mentions.png)
 
 It consists of two sections:
 
-* The code to download the current day's newspapers, and parse out text, bounding boxes, font sizes, and font faces.
+* The code to download the current day's newspapers from the [the Newseum website](newseum.org/todaysfrontpages/), and parse out text, bounding boxes, font sizes, and font faces.
 * The analyses (mostly Jupyter notebooks) of the resulting data. See the `analysis/` subdirectory for more information.
 
 For desired contributions, see `WISHLIST.md` :).
