@@ -26,16 +26,18 @@ def make_intensity_grid(paper, height, width, verbose=False):
     
     return intensity_grid
 
-def plot_intensity(intensity, title, scale=100):
+def plot_intensity(intensity, title, scale=100, ax=None, vmax=30):
     height, width = intensity.shape
-    fig = plt.figure(figsize=(height/scale, width/scale))
-    ax = plt.gca()
+
+    if not ax:
+        fig = plt.figure(figsize=(height/scale, width/scale))
+        ax = plt.gca()
+        fig.suptitle(title)
+    else:
+        ax.set_title(title)
 
     cmap = plt.get_cmap('YlOrRd')
     cmap.set_under(color='white')
 
-    fig.suptitle(title)
-    plt.imshow(intensity, cmap=cmap, extent=[0, width, 0, height], origin='lower', vmin=0.1)
-    plt.close()
-    return fig
-
+    img = ax.imshow(intensity, cmap=cmap, extent=[0, width, 0, height], origin='lower', vmin=0.1, vmax=vmax)
+    return img

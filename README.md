@@ -1,6 +1,13 @@
 # Front page newspaper parsing
 
-This project downloads the current day's newspaper's front pages from [the Newseum website](newseum.org/todaysfrontpages/), then parses out text, bounding boxes, font sizes, and font faces.
+![Mentions of "Syria" by day](analysis/static/syria_mentions.png)
+
+This project analyzes the front pages of newspapers from the [the Newseum website](newseum.org/todaysfrontpages/).
+
+It consists of two sections:
+
+* The code to download the current day's newspapers, and parse out text, bounding boxes, font sizes, and font faces.
+* The analyses (mostly Jupyter notebooks) of the resulting data. See the `analysis/` subdirectory for more information.
 
 For desired contributions, see `WISHLIST.md` :).
 
