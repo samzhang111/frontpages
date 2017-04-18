@@ -1,6 +1,6 @@
 # Newspaper front pages
 
-This project is about analyzing the front pages of newspapers en masse. For example, here is this plot of mentions of "Syria" across all the newspapers in our database over the last few weeks: 
+This project is about analyzing the front pages of newspapers en masse. 
 
 ![Mentions of "Syria" by day across many newspapers](analysis/static/syria_mentions.png)
 
