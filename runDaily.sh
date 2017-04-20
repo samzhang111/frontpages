@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+cd "$(dirname "$0")"
 CURRENT_DATE=`date "+%Y_%m_%d"`
 
 source venv/bin/activate

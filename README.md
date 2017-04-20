@@ -11,17 +11,26 @@ It consists of two sections:
 
 For desired contributions, see `WISHLIST.md` :).
 
-## Installation:
-Requirements: Python 3, node, bash, qpdf, jq, OSX GNU coreutils
+## Crawler/parser installation:
+Requirements: Python 3, node, bash, qpdf, jq, timeout
 
 ### System dependencies:
-Only OSX is supported at the moment.
+
+#### OSX:
 
 * qpdf: `brew install qpdf`
 * gtimeout: `brew install coreutils`
 * jq: `brew install jq`
 
-But that is because these are terrible bash scripts. We should fix that!
+`gtimeout` must be aliased to `timeout`
+
+#### Ubuntu:
+
+First run `sudo apt-get update`
+
+* qpdf: `sudo apt-get install qpdf`
+* timeout: `sudo apt-get install coreutils`
+* jq: `sudo apt-get install jq`
 
 ### Python:
 ```bash
