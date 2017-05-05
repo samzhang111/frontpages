@@ -1,5 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+from matplotlib.colors import Normalize
 import pandas as pd
 
 newspapers = pd.read_sql_table('newspapers', 'postgres:///frontpages')
@@ -25,6 +27,14 @@ def make_intensity_grid(paper, height, width, verbose=False):
         intensity_grid[bottom:top, left:right] = row.avg_character_area
     
     return intensity_grid
+
+def make_color_grid(intensity_grid, colorscale, vmax):
+    cmap = plt.get_cmap(colorscale)
+    cmap.set_under(color='white')
+    norm = Normalize(vmin=0.1, vmax=vmax)
+    m = cm.ScalarMappable(norm=norm, cmap=cmap)
+    
+    return m.to_rgba(intensity_grid)[::-1]
 
 def plot_intensity(intensity, title, scale=100, ax=None, vmax=30):
     height, width = intensity.shape
