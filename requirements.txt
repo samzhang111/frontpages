@@ -2,6 +2,7 @@ appdirs==1.4.3
 appnope==0.1.0
 beautifulsoup4==4.5.3
 bs4==0.0.1
+chardet==3.0.4
 decorator==4.0.11
 ipython==5.3.0
 ipython-genutils==0.2.0
@@ -9,7 +10,7 @@ lxml==3.7.3
 numpy==1.12.1
 packaging==16.8
 pandas==0.19.2
--e git+https://github.com/jaepil/pdfminer3k@3e3a259b0d36fc3e8a4c1554d6a2ba9693387427#egg=pdfminer3k
+pdfminer.six==20170720
 pexpect==4.2.1
 pickleshare==0.7.4
 ply==3.10
@@ -17,13 +18,14 @@ prompt-toolkit==1.0.14
 psycopg2==2.7.1
 ptyprocess==0.5.1
 py==1.4.33
+pycryptodome==3.4.7
 Pygments==2.2.0
 pyparsing==2.2.0
 pytest==3.0.7
 python-dateutil==2.6.0
 pytz==2017.2
 simplegeneric==0.8.1
-six==1.10.0
+six==1.11.0
 SQLAlchemy==1.1.9
 traitlets==4.3.2
 wcwidth==0.1.7

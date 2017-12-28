@@ -1,35 +1,31 @@
 # Newspaper front pages
 
-This project is about analyzing the front pages of newspapers en masse. 
+This project is about programatically analyzing the front pages of newspapers. 
 
 ![Mentions of "Syria" by day across many newspapers](analysis/static/syria_mentions.png)
 
 It consists of two sections:
 
-* The code to download the current day's newspapers from the [the Newseum website](newseum.org/todaysfrontpages/), and parse out text, bounding boxes, font sizes, and font faces.
+* The code to download the current day's newspapers from the [the Newseum website](newseum.org/todaysfrontpages/), and parse out text, bounding boxes, font sizes, and font faces. 
 * The analyses (mostly Jupyter notebooks) of the resulting data. See the `analysis/` subdirectory for more information.
 
 For desired contributions, see `WISHLIST.md` :).
 
 ## Crawler/parser installation:
-Requirements: Python 3, node, bash, qpdf, jq, timeout
+Requirements: Python 3, node, bash, qpdf, jq
 
 ### System dependencies:
 
 #### OSX:
 
 * qpdf: `brew install qpdf`
-* gtimeout: `brew install coreutils`
 * jq: `brew install jq`
-
-`gtimeout` must be aliased to `timeout`
 
 #### Ubuntu:
 
 First run `sudo apt-get update`
 
 * qpdf: `sudo apt-get install qpdf`
-* timeout: `sudo apt-get install coreutils`
 * jq: `sudo apt-get install jq`
 
 ### Python:
