@@ -1,14 +1,14 @@
-var jsdom = require("jsdom");
+const phantom = require('phantom');
 
-jsdom.env({
-   url: 'http://www.newseum.org/todaysfrontpages/',
-   done: function(err, window){
-       console.log(JSON.stringify(window.TFP_DATA));
-       window.close();
-   },
-   features: {
-       FetchExternalResources: ['script'],
-       ProcessExternalResources: ['script'],
-       SkipExternalResources: false}
-   }
-);
+(async function() {
+    const instance = await phantom.create();
+    const page = await instance.createPage();
+
+    await page.open("https://www.newseum.org/todaysfrontpages/")
+    const tfpData = await page.evaluate(function() {
+        return JSON.stringify(window.TFP_DATA)
+    })
+    console.log(tfpData)
+
+    await instance.exit();
+})();

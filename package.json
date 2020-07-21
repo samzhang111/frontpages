@@ -4,7 +4,9 @@
   "description": "For downloading newspapers",
   "main": "discoverNewspapers.js",
   "dependencies": {
-    "jsdom": "^9.12.0"
+    "canvas": "^2.6.1",
+    "jsdom": "^16.2.2",
+    "phantom": "^6.3.0"
   },
   "devDependencies": {},
   "keywords": [],

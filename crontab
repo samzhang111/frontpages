@@ -1,0 +1,2 @@
+00 18 * * * /home/sam/workspace/frontpages/runDaily.sh
+00 00 * * 0 /home/sam/workspace/frontpages/archive.sh
