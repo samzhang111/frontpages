@@ -17,7 +17,7 @@ ply==3.10
 prompt-toolkit==1.0.14
 psycopg2==2.7.1
 ptyprocess==0.5.1
-py==1.4.33
+py==1.10.0
 pycryptodome==3.4.7
 Pygments==2.2.0
 pyparsing==2.2.0
